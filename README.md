@@ -1,4 +1,4 @@
-##container-inspect
+container-inspect
 
 container-inspect is a Python-based container inspection tool designed to provide detailed information about Linux containers and their underlying runtime environment.
 
