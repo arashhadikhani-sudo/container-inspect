@@ -1,10 +1,10 @@
-container-inspect
+##container-inspect
 
 container-inspect is a Python-based container inspection tool designed to provide detailed information about Linux containers and their underlying runtime environment.
 
 Unlike tools that depend directly on Docker APIs, container-inspect aims to inspect containers at the Linux and OCI layers, making it useful for understanding and debugging container runtimes such as runc and crun.
 
-Features
+#Features
 🔍 Container and process inspection
 📦 OCI runtime configuration inspection
 🐧 Linux namespace inspection
@@ -16,12 +16,12 @@ Features
 🖥️ Human-readable terminal output
 🤖 JSON/YAML output for automation
 🐍 Python API for programmatic inspection
-Example
+#Example
 container-inspect list
 container-inspect inspect nginx
 container-inspect inspect nginx --format json
 
-Example output:
+#Example output:
 
 Container: nginx
 Runtime: runc
@@ -34,15 +34,15 @@ Namespaces:
   MNT: 402653xxxx
   UTS: 402653xxxx
 
-Resources:
+#Resources:
   CPU: 2.3%
   Memory: 84 MB / 512 MB
 
-Network:
+#Network:
   IP: 172.17.0.4
   Interfaces: eth0, lo
 
-Security:
+#Security:
   Privileged: false
   Seccomp: enabled
 Project goal
