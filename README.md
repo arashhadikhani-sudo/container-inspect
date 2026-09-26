@@ -2,7 +2,7 @@ container-inspect
 
 container-inspect is a Python-based container inspection tool designed to provide detailed information about Linux containers and their underlying runtime environment.
 
-Unlike tools that depend directly on Docker APIs, container-inspect aims to inspect containers at the Linux and OCI layers, making it useful for understanding and debugging container runtimes such as runc and crun.
+Unlike tools that depend directly on Docker APIs, container-inspect aims to inspect containers at the Linux and OCI layers, making it useful for understanding and debugging container runtimes such as runc , crun and youki.
 
 Features
 🔍 Container and process inspection

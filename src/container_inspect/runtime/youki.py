@@ -35,4 +35,6 @@ class Youki(Runtime):
 
     def delete(self, container_id: str) -> None:
         """Delete a container."""
-        
+        subprocess.run(
+            ["youki" , "", container_id]
+        )

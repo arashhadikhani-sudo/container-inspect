@@ -29,8 +29,8 @@ class Crun(Runtime):
     def kill(self, container_id: str, signal: int) -> None:
         """Send a signal to a container."""
         subprocess.run(
-                     ["crun", "kill", container_id],
-                    check=True
+            ["crun", "kill", container_id],
+            check=True
                 )
 
     def delete(self, container_id: str) -> None:

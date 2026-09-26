@@ -8,7 +8,7 @@ name = "container-inspect"
 version = "0.1.0"
 description = "Inspect Linux containers from the OCI and Linux kernel layers."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 
 authors = [
@@ -42,7 +42,9 @@ classifiers = [
     "Topic :: System :: Monitoring"
 ]
 
-dependencies = []
+dependencies = [
+    pytest==9.1.1
+]
 
 
 [project.optional-dependencies]
@@ -89,5 +91,5 @@ select = [
 
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.11"
 strict = true
