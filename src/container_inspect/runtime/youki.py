@@ -29,12 +29,13 @@ class Youki(Runtime):
     def kill(self, container_id: str, signal: int) -> None:
         """Send a signal to a container."""
         subprocess.run(
-            ["crun", "kill", container_id],
+            ["crun", "kill", container_id, "9"],
             check=True
                         )
 
     def delete(self, container_id: str) -> None:
         """Delete a container."""
         subprocess.run(
-            ["youki" , "", container_id]
+            ["youki" , "delete", container_id, ],
+            check=True
         )

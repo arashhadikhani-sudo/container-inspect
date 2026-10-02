@@ -42,9 +42,7 @@ classifiers = [
     "Topic :: System :: Monitoring"
 ]
 
-dependencies = [
-    pytest==9.1.1
-]
+dependencies = []
 
 
 [project.optional-dependencies]
@@ -57,7 +55,7 @@ dev = [
 
 
 [project.scripts]
-container-inspect = "container_inspect.cli.command:main"
+container-inspect = "container_inspect.cli.commands:main"
 
 
 [project.urls]

@@ -17,15 +17,14 @@ class Crun(Runtime):
             ["crun", "start", container_id],
             check=True
         ) 
-            
-        
-
+                
     def state(self, container_id: str) -> dict:
         """Return container state."""
         subprocess.run(
              ["crun", "status", container_id],
             check=True
         )
+        
     def kill(self, container_id: str, signal: int) -> None:
         """Send a signal to a container."""
         subprocess.run(
