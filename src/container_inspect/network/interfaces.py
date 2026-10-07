@@ -116,4 +116,3 @@ class InterfaceInspector:
         return InterfaceInspector._read_int(
             interface_path / "statistics" / name
         )
-

@@ -230,7 +230,6 @@ def run(argv: list[str] | None = None) -> int:
     parser.print_help()
     return 0
 
-
 def main() -> None:
     """CLI entry point."""
 

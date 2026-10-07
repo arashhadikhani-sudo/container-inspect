@@ -1,0 +1,5 @@
+container_inspect.egg-info/
+*.txt
+*.pyc
+PKG-INFO
+__pycache__/
