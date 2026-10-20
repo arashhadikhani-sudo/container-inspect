@@ -1,0 +1,14 @@
+from container_inspect.security.capabilities import (
+    decode_capability_hex,
+    decode_capability_mask,
+    encode_capabilities,
+)
+
+capabilities = decode_capability_hex("400")
+print(capabilities)
+
+mask = encode_capabilities({"CAP_CHOWN", "CAP_NET_RAW"})
+print(hex(mask))
+
+decoded = decode_capability_mask(mask)
+print(decoded)
